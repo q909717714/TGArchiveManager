@@ -1,0 +1,75 @@
+app:
+  name: TGArchiveManager
+  language: zh_CN
+
+telegram:
+  api_id: ""
+  api_hash: ""
+  session_name: "user"
+  session_dir: "sessions"
+
+public_search:
+  enabled: true
+  default_max_results: 100
+  duplicate_check: true
+  require_preview_before_forward: true
+  default_forward_mode: "card"
+
+search_engines:
+  jisou:
+    enabled: true
+    type: "telegram_bot"
+    username: "@jisou"
+    rate_limit_seconds: 5
+  soso:
+    enabled: false
+    type: "telegram_bot"
+    username: ""
+    rate_limit_seconds: 5
+  kuai:
+    enabled: false
+    type: "telegram_bot"
+    username: ""
+    rate_limit_seconds: 5
+  telegram_native:
+    enabled: true
+    type: "telegram_native"
+
+forward:
+  default_interval_seconds: 3
+  max_per_task: 100
+  skip_duplicates: true
+  create_group_before_forward: true
+  default_group_name_rule: "搜索_{keyword}_{date}"
+
+backup:
+  default_limit: 1000
+  enable_incremental: true
+
+download:
+  root_dir: "downloads"
+  download_images: true
+  download_videos: true
+  download_documents: true
+  download_audio: true
+  max_file_size_mb: 500
+  retry_count: 3
+  skip_existing: true
+
+export:
+  root_dir: "exports"
+  enable_csv: true
+  enable_excel: true
+  enable_json: true
+  enable_html: false
+
+database:
+  path: "data/tg_archive.db"
+
+logs:
+  root_dir: "logs"
+  level: "INFO"
+  retention_days: 30
+  save_public_search_log: true
+  save_forward_log: true
+  save_download_log: true

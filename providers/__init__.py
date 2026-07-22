@@ -1,0 +1,1 @@
+"""Public search provider package."""
