@@ -9,6 +9,7 @@ venv/
 .agents/
 .codex/
 .public-release-check-*/
+.public-screenshot-work/
 .env
 .env.*
 !.env.example

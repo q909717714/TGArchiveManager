@@ -1,11 +1,37 @@
 # TGArchiveManager
 
+[![CI](https://github.com/q909717714/TGArchiveManager/actions/workflows/ci.yml/badge.svg)](https://github.com/q909717714/TGArchiveManager/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/q909717714/TGArchiveManager)](https://github.com/q909717714/TGArchiveManager/releases/latest)
+[![License](https://img.shields.io/github/license/q909717714/TGArchiveManager)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+
 TGArchiveManager 是一个本地 Windows 桌面工具，用于管理 Telegram 内容归档流程。
 项目基于 Python 3.10+、PySide6、Telethon 和 SQLite 实现。
 
 > 当前状态：`v0.1.0` 公开预览。项目仍在持续完善，建议先使用测试账号和小范围聊天验证工作流。
 
 当前 MVP 已覆盖：Telegram 登录、聊天同步、公开搜索、搜索结果管理和转发、聊天记录转发、消息备份、媒体下载、本地搜索、数据导出、日志排查和 Windows 打包发布。
+
+## 界面预览
+
+截图由空配置、空数据库和未登录状态的本地演示环境生成，不包含真实账号或聊天数据。
+
+### Bot 公开搜索
+
+![Bot 公开搜索界面](docs/images/public-search.png)
+
+<details>
+<summary>查看更多界面</summary>
+
+### 备份下载
+
+![备份下载界面](docs/images/backup-download.png)
+
+### 数据导出
+
+![数据导出界面](docs/images/data-export.png)
+
+</details>
 
 ## 功能范围
 
@@ -166,4 +192,4 @@ python scripts\preflight_check.py --root .
 
 ## 参与贡献与许可证
 
-提交 Issue 或 PR 前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。项目采用 [MIT License](LICENSE)。
+欢迎通过 [Issue](https://github.com/q909717714/TGArchiveManager/issues) 报告安装兼容性、导出格式和安全问题，也欢迎从 `good first issue` 或 `help wanted` 任务开始贡献。提交 Issue 或 PR 前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。项目采用 [MIT License](LICENSE)。
