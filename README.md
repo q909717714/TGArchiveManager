@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/github/license/q909717714/TGArchiveManager)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
+[English](README.en.md) | [简体中文](README.md)
+
 TGArchiveManager 是一个本地 Windows 桌面工具，用于管理 Telegram 内容归档流程。
 项目基于 Python 3.10+、PySide6、Telethon 和 SQLite 实现。
 
